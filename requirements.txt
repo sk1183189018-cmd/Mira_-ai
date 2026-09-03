@@ -1,0 +1,94 @@
+# ==============================
+# MIRA AI ASSISTANT
+# Core Requirements
+# ==============================
+
+# AI
+openai>=1.0.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Configuration
+PyYAML>=6.0.1
+
+# Async utilities
+aiofiles>=24.1.0
+
+# HTTP requests
+httpx>=0.27.0
+requests>=2.32.0
+
+# ==============================
+# Voice System
+# ==============================
+
+SpeechRecognition>=3.10.4
+PyAudio>=0.2.14
+pyttsx3>=2.90
+
+# Audio processing
+sounddevice>=0.5.0
+numpy>=1.26.0
+
+# ==============================
+# Computer Control
+# ==============================
+
+pyautogui>=0.9.54
+psutil>=6.0.0
+pygetwindow>=0.0.9
+pyperclip>=1.9.0
+
+# Windows-specific features
+pywin32>=306
+
+# ==============================
+# Screen / Vision
+# ==============================
+
+Pillow>=10.4.0
+
+# ==============================
+# File System
+# ==============================
+
+watchdog>=5.0.0
+
+# ==============================
+# Web System
+# ==============================
+
+beautifulsoup4>=4.12.3
+lxml>=5.3.0
+
+# ==============================
+# Database / Memory
+# ==============================
+
+SQLAlchemy>=2.0.0
+
+# ==============================
+# Security
+# ==============================
+
+cryptography>=43.0.0
+
+# ==============================
+# Scheduling / Automation
+# ==============================
+
+APScheduler>=3.10.4
+
+# ==============================
+# GUI
+# ==============================
+
+customtkinter>=5.2.2
+
+# ==============================
+# Development / Testing
+# ==============================
+
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
