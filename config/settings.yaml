@@ -1,0 +1,178 @@
+============================================================
+
+MIRA AI ASSISTANT
+
+REAL APPLICATION CONFIGURATION
+
+============================================================
+
+app:
+name: MIRA
+version: "1.0.0"
+environment: production
+debug: false
+
+------------------------------------------------------------
+
+AI
+
+API key is loaded securely from environment variables.
+
+Do NOT put secret API keys in this file.
+
+------------------------------------------------------------
+
+ai:
+provider: openai
+model_env: MIRA_MODEL
+timeout_seconds: 60
+max_history_messages: 20
+
+------------------------------------------------------------
+
+CONVERSATION
+
+------------------------------------------------------------
+
+conversation:
+default_language: hinglish
+system_name: MIRA
+max_context_messages: 20
+
+------------------------------------------------------------
+
+MEMORY
+
+------------------------------------------------------------
+
+memory:
+enabled: true
+database_path: data/mira.db
+short_term_limit: 20
+long_term_enabled: true
+
+------------------------------------------------------------
+
+VOICE
+
+------------------------------------------------------------
+
+voice:
+enabled: true
+language: en-IN
+wake_word: hey mira
+wake_word_enabled: false
+speech_rate: 180
+volume: 1.0
+
+------------------------------------------------------------
+
+COMPUTER CONTROL
+
+------------------------------------------------------------
+
+computer:
+enabled: true
+screenshots_directory: data/screenshots
+
+------------------------------------------------------------
+
+FILE SYSTEM
+
+------------------------------------------------------------
+
+files:
+enabled: true
+allow_delete: false
+require_confirmation_for_delete: true
+allowed_roots:
+- .
+
+------------------------------------------------------------
+
+WEB
+
+------------------------------------------------------------
+
+web:
+enabled: true
+max_search_results: 5
+timeout_seconds: 30
+
+------------------------------------------------------------
+
+CODING ASSISTANT
+
+------------------------------------------------------------
+
+coding:
+enabled: true
+workspace_directory: data/projects
+require_confirmation_before_overwrite: true
+
+------------------------------------------------------------
+
+VISION
+
+------------------------------------------------------------
+
+vision:
+enabled: true
+save_screenshots: true
+
+------------------------------------------------------------
+
+AUTOMATION
+
+------------------------------------------------------------
+
+automation:
+enabled: true
+require_confirmation_before_execution: true
+
+------------------------------------------------------------
+
+SECURITY
+
+------------------------------------------------------------
+
+security:
+require_confirmation_for_sensitive_actions: true
+audit_logging: true
+audit_log_file: logs/audit.log
+
+------------------------------------------------------------
+
+PLUGINS
+
+------------------------------------------------------------
+
+plugins:
+enabled: true
+directory: plugins
+auto_load: true
+
+------------------------------------------------------------
+
+GUI
+
+------------------------------------------------------------
+
+gui:
+enabled: true
+theme: dark
+title: MIRA AI Assistant
+width: 1200
+height: 800
+
+------------------------------------------------------------
+
+LOGGING
+
+------------------------------------------------------------
+
+logging:
+level: INFO
+directory: logs
+filename: mira.log
+console_output: true
